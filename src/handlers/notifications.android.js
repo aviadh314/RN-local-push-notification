@@ -9,9 +9,11 @@ export const showNotification = (title, message) => {
 }
 export const showScheduleNotification = (title, message) => {
     PushNotification.localNotificationSchedule({
+        channelId: 'channel-id-1',
         title: title,
         message: message,
-        date: new Date(Date.Now() + 10 * 1000),
+        date: new Date(Date.now() + 3 * 1000),
+        allowWhileIdle: true, 
     })
 }
 export const handleNotificationCancel = () => {
