@@ -7,7 +7,7 @@
  */
 
 import React from 'react';
-import TestNotification from './src/components/TestNotifications';
+import TestNotifications from './src/components/TestNotifications';
 import { View } from 'react-native';
 import { notificationsInit } from './src/handlers/notificationsInit';
 
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
       <View>
-        <TestNotification />
+        <TestNotifications />
       </View>
   );
 };

@@ -12,7 +12,7 @@ export const showScheduleNotification = (title, message) => {
         channelId: 'channel-id-1',
         title: title,
         message: message,
-        date: new Date(Date.now() + 3 * 1000),
+        date: new Date(Date.now() + 5 * 1000),
         allowWhileIdle: true, 
     })
 }

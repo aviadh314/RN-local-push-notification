@@ -6,7 +6,7 @@ import {
     handleNotificationCancel
 } from '../handlers/notifications';
 
-export default class TestNotification extends React.Component {
+export default class TestNotifications extends React.Component {
 
     onTriggerPressHandle = () => {
         showNotification('Simple notification', 'simple notification triggered, nice work');
@@ -35,7 +35,7 @@ export default class TestNotification extends React.Component {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={this.onSchedulePressHandle}>
-                    <Text style={styles.text}>{'--Scheduled notification--\nFire in 3 secondes'}</Text>
+                    <Text style={styles.text}>{'--Scheduled notification--\nFire in 5 secondes'}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={[styles.button, {backgroundColor: 'red'}]}
